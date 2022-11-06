@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="biblDataSet" targetNamespace="http://tempuri.org/biblDataSet.xsd" xmlns:mstns="http://tempuri.org/biblDataSet.xsd" xmlns="http://tempuri.org/biblDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="biblTable" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="biblTable (Settings)" PropertyReference="ApplicationSettings.practika.Properties.Settings.GlobalReference.Default.biblTable" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Выдача ЗапросTableAdapter" GeneratorDataComponentClassName="Выдача_ЗапросTableAdapter" Name="Выдача Запрос" UserDataComponentName="Выдача ЗапросTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="biblTable (Settings)" DbObjectName="Выдача Запрос" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT НомерЧитБилета, Название, ДатаВыдачи, ДатаВозврата, Сдано, Фамилия, Имя, Отчество, Адрес, Телефон FROM [Выдача Запрос]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="НомерЧитБилета" DataSetColumn="НомерЧитБилета" />
+              <Mapping SourceColumn="Название" DataSetColumn="Название" />
+              <Mapping SourceColumn="ДатаВыдачи" DataSetColumn="ДатаВыдачи" />
+              <Mapping SourceColumn="ДатаВозврата" DataSetColumn="ДатаВозврата" />
+              <Mapping SourceColumn="Сдано" DataSetColumn="Сдано" />
+              <Mapping SourceColumn="Фамилия" DataSetColumn="Фамилия" />
+              <Mapping SourceColumn="Имя" DataSetColumn="Имя" />
+              <Mapping SourceColumn="Отчество" DataSetColumn="Отчество" />
+              <Mapping SourceColumn="Адрес" DataSetColumn="Адрес" />
+              <Mapping SourceColumn="Телефон" DataSetColumn="Телефон" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="biblDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="biblDataSet" msprop:Generator_UserDSName="biblDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Выдача_x0020_Запрос" msprop:Generator_TableClassName="Выдача_ЗапросDataTable" msprop:Generator_TableVarName="tableВыдача_Запрос" msprop:Generator_TablePropName="Выдача_Запрос" msprop:Generator_RowDeletingName="Выдача_ЗапросRowDeleting" msprop:Generator_RowChangingName="Выдача_ЗапросRowChanging" msprop:Generator_RowEvHandlerName="Выдача_ЗапросRowChangeEventHandler" msprop:Generator_RowDeletedName="Выдача_ЗапросRowDeleted" msprop:Generator_UserTableName="Выдача Запрос" msprop:Generator_RowChangedName="Выдача_ЗапросRowChanged" msprop:Generator_RowEvArgName="Выдача_ЗапросRowChangeEvent" msprop:Generator_RowClassName="Выдача_ЗапросRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="НомерЧитБилета" msprop:Generator_ColumnVarNameInTable="columnНомерЧитБилета" msprop:Generator_ColumnPropNameInRow="НомерЧитБилета" msprop:Generator_ColumnPropNameInTable="НомерЧитБилетаColumn" msprop:Generator_UserColumnName="НомерЧитБилета" type="xs:int" minOccurs="0" />
+              <xs:element name="Название" msprop:Generator_ColumnVarNameInTable="columnНазвание" msprop:Generator_ColumnPropNameInRow="Название" msprop:Generator_ColumnPropNameInTable="НазваниеColumn" msprop:Generator_UserColumnName="Название" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ДатаВыдачи" msprop:Generator_ColumnVarNameInTable="columnДатаВыдачи" msprop:Generator_ColumnPropNameInRow="ДатаВыдачи" msprop:Generator_ColumnPropNameInTable="ДатаВыдачиColumn" msprop:Generator_UserColumnName="ДатаВыдачи" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ДатаВозврата" msprop:Generator_ColumnVarNameInTable="columnДатаВозврата" msprop:Generator_ColumnPropNameInRow="ДатаВозврата" msprop:Generator_ColumnPropNameInTable="ДатаВозвратаColumn" msprop:Generator_UserColumnName="ДатаВозврата" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Сдано" msprop:Generator_ColumnVarNameInTable="columnСдано" msprop:Generator_ColumnPropNameInRow="Сдано" msprop:Generator_ColumnPropNameInTable="СданоColumn" msprop:Generator_UserColumnName="Сдано" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Фамилия" msprop:Generator_ColumnVarNameInTable="columnФамилия" msprop:Generator_ColumnPropNameInRow="Фамилия" msprop:Generator_ColumnPropNameInTable="ФамилияColumn" msprop:Generator_UserColumnName="Фамилия" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Имя" msprop:Generator_ColumnVarNameInTable="columnИмя" msprop:Generator_ColumnPropNameInRow="Имя" msprop:Generator_ColumnPropNameInTable="ИмяColumn" msprop:Generator_UserColumnName="Имя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отчество" msprop:Generator_ColumnVarNameInTable="columnОтчество" msprop:Generator_ColumnPropNameInRow="Отчество" msprop:Generator_ColumnPropNameInTable="ОтчествоColumn" msprop:Generator_UserColumnName="Отчество" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес" msprop:Generator_ColumnVarNameInTable="columnАдрес" msprop:Generator_ColumnPropNameInRow="Адрес" msprop:Generator_ColumnPropNameInTable="АдресColumn" msprop:Generator_UserColumnName="Адрес" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Телефон" msprop:Generator_ColumnVarNameInTable="columnТелефон" msprop:Generator_ColumnPropNameInRow="Телефон" msprop:Generator_ColumnPropNameInTable="ТелефонColumn" msprop:Generator_UserColumnName="Телефон" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
